@@ -25,6 +25,8 @@ def main() -> None:
         "show module details",
         "how many WL6e configs have warning track",
         "compatible components for platform",
+        "hello",
+        "thanks for your help",
     ]
 
     for question in examples:

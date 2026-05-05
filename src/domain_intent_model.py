@@ -6,8 +6,11 @@ import json
 import re
 from collections import Counter, defaultdict
 
-
 TOKEN_RE = re.compile(r"[a-z0-9]+")
+
+GREETING_WORDS = {"hi", "hello", "hey", "greetings", "gm", "good", "morning", "afternoon", "evening"}
+THANKS_WORDS = {"thanks", "thank", "thx", "appreciate"}
+BYE_WORDS = {"bye", "goodbye", "see", "later"}
 
 
 @dataclass
@@ -28,6 +31,17 @@ class DomainIntentRouter:
     def _tokenize(text: str) -> list[str]:
         return TOKEN_RE.findall((text or "").lower())
 
+    def _detect_chitchat(self, question: str) -> DetectionResult | None:
+        tokens = set(self._tokenize(question))
+        q = question.strip().lower()
+        if q in {"hi", "hello", "hey"} or tokens.intersection(GREETING_WORDS):
+            return DetectionResult("generic", "greeting", "respond", "chat_agent", "Hello! How can I help you today?")
+        if tokens.intersection(THANKS_WORDS):
+            return DetectionResult("generic", "gratitude", "respond", "chat_agent", "You're welcome! Happy to help.")
+        if q in {"bye", "goodbye"} or ("see" in tokens and "later" in tokens):
+            return DetectionResult("generic", "farewell", "respond", "chat_agent", "Goodbye! Feel free to ask anytime.")
+        return None
+
     def _score_sample(self, question_tokens: list[str], sample: dict) -> float:
         stokens = set(self._tokenize(sample.get("QUESTION_TEXT", "") + " " + sample.get("CONTEXT", "")))
         if not stokens:
@@ -36,27 +50,18 @@ class DomainIntentRouter:
         return overlap / (len(stokens) ** 0.5)
 
     def detect(self, question: str) -> DetectionResult:
+        chat = self._detect_chitchat(question)
+        if chat:
+            return chat
+
         qtokens = self._tokenize(question)
         scored = sorted(((self._score_sample(qtokens, s), s) for s in self.samples), key=lambda x: x[0], reverse=True)
         best_score, best = scored[0]
-
         if best_score == 0:
-            return DetectionResult(
-                domain="generic",
-                intent="unknown",
-                operation="read",
-                agent_type="api_agent",
-                answer="I could not confidently detect your request. Please add more specific keywords.",
-            )
+            return DetectionResult("generic", "unknown", "read", "api_agent", "I could not confidently detect your request. Please add more specific keywords.")
 
         answer = (best.get("CONTEXT") or "").strip() or f"Matched {best['INTENT']} in {best['DOMAIN']}"
-        return DetectionResult(
-            domain=best["DOMAIN"],
-            intent=best["INTENT"],
-            operation=best["OPERATION"],
-            agent_type=best["AGENT_TYPE"],
-            answer=answer,
-        )
+        return DetectionResult(best["DOMAIN"], best["INTENT"], best["OPERATION"], best["AGENT_TYPE"], answer)
 
     def save(self, path: str | Path) -> None:
         payload = {"samples": self.samples, "token_stats": self.token_stats}
@@ -73,7 +78,6 @@ def train_router(samples: list[dict]) -> DomainIntentRouter:
     for row in samples:
         key = f"{row['DOMAIN']}|{row['INTENT']}|{row['OPERATION']}|{row['AGENT_TYPE']}"
         token_counts[key].update(DomainIntentRouter._tokenize((row.get("QUESTION_TEXT", "") + " " + row.get("CONTEXT", ""))))
-
     token_stats = {k: dict(v.most_common(10)) for k, v in token_counts.items()}
     return DomainIntentRouter(samples, token_stats)
 
