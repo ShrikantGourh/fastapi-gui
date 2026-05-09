@@ -1,0 +1,706 @@
+[
+  {
+    "question": "ntk550dd vs ntk550de",
+    "domain": "generic",
+    "intent": "unknown",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "I could not confidently detect your request. Please add more specific keywords."
+  },
+  {
+    "question": "List down all the compatible components for 130-5144-900",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "Compare 130-5144-900 with 130-4476-940",
+    "domain": "wl6e",
+    "intent": "data_comparison",
+    "operation": "compare",
+    "agent_type": "api_agent",
+    "answer": "Compare ETMs across releases"
+  },
+  {
+    "question": "Compare 130-5144-900 transceiver pec with 130-4476-940 transceiver pec",
+    "domain": "transceiver",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch full transceiver metadata using PEC"
+  },
+  {
+    "question": "How do CFP2-DCO modules differ from QSFP-DD modules in terms of functionality and design?",
+    "domain": "module",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list modules"
+  },
+  {
+    "question": "list all the transceiver that support 6500-D/S platform",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "list down all the components added newly in the latest version for 130-5144-900",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What are the types of sub-network connections (SNCs) supported by 6500 Packet-Optical Platform?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "who are the primary/secondary approver for 130-5144-900",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What is the latest version for 130-5144-900",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "fetch transceiver for an attribute with condition (e.g., list down all the transceiver where Extinction ratio is greater than 6 dB)",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "How are MPO connector lane assignments managed in 160-9607-900 400GBASE-SR8 module?",
+    "domain": "module",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch module details using module PEC"
+  },
+  {
+    "question": "show all customers and their associated PEC codes",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "What is the approval status for 130-5144-900",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "How does the QSFP-DD module handle 400Gb/s transport applications?",
+    "domain": "module",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch module details using module PEC"
+  },
+  {
+    "question": "what is the ETM support status of WL6e_S_85p3GBd_800G_E_STD_PTM3_NMM2 ETM",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Does this WL6e_S_170p0GBd_600G_E_STD_PTM3_NMM2 ETM updated in multiple releases? list down the updates",
+    "domain": "wl6e",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list enhanced transmission mode IDs or WL6e IDs"
+  },
+  {
+    "question": "What are the supported data rates for QSFP-DD Active Optical Cables?",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "List down all the transceiver approved by me",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "How do diagnostic timestamps differ between network element and Site Manager OS time zone?",
+    "domain": "wl6e",
+    "intent": "data_comparison",
+    "operation": "compare",
+    "agent_type": "api_agent",
+    "answer": "Compare ETMs across releases"
+  },
+  {
+    "question": "How many ETMs are placed in a particular release",
+    "domain": "module",
+    "intent": "compatibility_check",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "enhanced transmission mode or etm compatible to a module"
+  },
+  {
+    "question": "What is the value of line code for 130-5144-900",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the latest version for NTTP11AFE6",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "list down latest changes on transceiver pec NTTP11AFE6",
+    "domain": "transceiver",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "searching transceivers on a condition"
+  },
+  {
+    "question": "How do OSFP pluggables support 1.6Tb/s transport?",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "How many WL6e configurations have warning track enabled for each constellation type?"
+  },
+  {
+    "question": "List down all the compatible components for 130-4476-940",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "where was this ETM WL6e_S_170p0GBd_600G_E_STD_PTM3_NMM2 PLM requirement placed",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch WL6e / WaveLogic details"
+  },
+  {
+    "question": "how many transceivers are there in optical category",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "How many WL6e configurations have warning track enabled for each constellation type?"
+  },
+  {
+    "question": "What are the specifications for QSFP-DD800 pluggables used in Waveserver 5?",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What is the typical power consumption of QSFP-DD pluggables at ambient temperature?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the latest version for 160-9460-010",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What are the provisioning rules for OTN payload terminating remote endpoints?",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "Can you explain the differences between 400GBASE-SR8 and 400GBASE-DR4 classifications?",
+    "domain": "wl6e",
+    "intent": "data_comparison",
+    "operation": "compare",
+    "agent_type": "api_agent",
+    "answer": "Compare ETMs across releases"
+  },
+  {
+    "question": "list down all the components added newly in the latest version for 130-4476-940",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "Give me files attached in workspace for 130-4476-940",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "Does this ETM WL6e_S_170p0GBd_600G_E_STD_PTM3_NMM2 have warnings tracked",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "How many WL6e configurations have warning track enabled for each constellation type?"
+  },
+  {
+    "question": "show me the image of transceiver pec NTTP58BD",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Show all customers that begin with Liberty",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "Can you provide an overview of documentation roadmap for Waveserver 5?",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "who are the primary/secondary approver for 160-9460-010",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "what are features and benefits of 130-4476-940",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "How can I perform a manual switch to a specific user protection route for SNC?",
+    "domain": "module",
+    "intent": "compatibility_check",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "enhanced transmission mode or etm compatible to a module"
+  },
+  {
+    "question": "Which customers have the longest fiber spans by distance",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "How many WL6e configurations have warning track enabled for each constellation type?"
+  },
+  {
+    "question": "who are the primary/secondary approver for 130-4476-940",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What is the significance of Mesh Restorable parameter in SNC configurations?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the approval status for NTTP11AFE6",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "How can I add or edit routing profiles in control plane?",
+    "domain": "module",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list modules"
+  },
+  {
+    "question": "What is the application of 100GBASE-SR4 pluggables in Waveserver?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Give me files attached in workspace for 130-5144-900",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "Show all network elements, quantity and software release by customer",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "What is the value of line code for 130-4476-940",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the approval status for 130-4476-940",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "list down all the components added newly in the latest version for 160-9460-010",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What are the key features of WaveLogic 5n coherent pluggable modules?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Count OMS links by customer",
+    "domain": "generic",
+    "intent": "unknown",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "I could not confidently detect your request. Please add more specific keywords."
+  },
+  {
+    "question": "give me the PLM requirement of WL6e_S_170p0GBd_600G_E_STD_PTM3_NMM2 ETM release-wise",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch WL6e / WaveLogic details"
+  },
+  {
+    "question": "Show all network elements, quantity and software release for google and liberty global",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "How is the power budget calculated for pluggable modules in Waveserver 5 system?",
+    "domain": "platform",
+    "intent": "compatibility_check",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch modules compatible with a platform"
+  },
+  {
+    "question": "What is the latest version for 130-4476-940",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Show all network elements, quantity and software release for google and libertyglobal",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What are the differences between single-mode fiber (SMF) and multi-mode fiber (MMF)?",
+    "domain": "wl6e",
+    "intent": "data_comparison",
+    "operation": "compare",
+    "agent_type": "api_agent",
+    "answer": "Compare ETMs across releases"
+  },
+  {
+    "question": "Show all network elements, quantity and software release by customer by capture ID",
+    "domain": "transceiver",
+    "intent": "data_listing",
+    "operation": "list",
+    "agent_type": "api_agent",
+    "answer": "Fetch or list all available transceivers"
+  },
+  {
+    "question": "list down all the components added newly in the latest version for NTTP11AFE6",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "Give me files attached in workspace for NTTP58BD",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "what are features and benefits of 130-5144-900",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "who are the primary/secondary approver for NTTP11AFE6",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "In which WL6e MR release WL6e_S_170p0GBd_600G_E_STD_PTM3_NMM2 ETM was approved",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Fetch WL6e / WaveLogic details"
+  },
+  {
+    "question": "What are the steps to retrieve OSRP provisioning information for a network element?",
+    "domain": "module",
+    "intent": "compatibility_check",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "enhanced transmission mode or etm compatible to a module"
+  },
+  {
+    "question": "Do we want to give option to edit the chat in chatbot?",
+    "domain": "module",
+    "intent": "compatibility_check",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "enhanced transmission mode or etm compatible to a module"
+  },
+  {
+    "question": "What is the value of line code for NTTP11AFE6",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the significance of IEEE standards in pluggable specifications?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Can you explain the blocked node feature in OSRP provisioning process?",
+    "domain": "generic",
+    "intent": "unknown",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "I could not confidently detect your request. Please add more specific keywords."
+  },
+  {
+    "question": "Which customers have more than 100 network elements of type 6500",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "How many WL6e configurations have warning track enabled for each constellation type?"
+  },
+  {
+    "question": "How does the manual reversion process work for SNC?",
+    "domain": "wl6e",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "db_agent",
+    "answer": "How many WL6e configurations have warning track enabled for each constellation type?"
+  },
+  {
+    "question": "search all attributes for 160-9460-010 pec for optical category",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What is the purpose of Time of Day Reversion (TODR) profiles in control plane configuration?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What does the term multi-source agreement mean in the context of CFP2-DCO modules?",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the value of line code for NTTP58BD",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Give me files attached in workspace for NTTP11AFE6",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What is the approval status for NTTP58BD",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What are the confidentiality obligations for using Ciena software?",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "list down all the components added newly in the latest version for NTTP58BD",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "What is the approval status for 160-9460-010",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the value of line code for 160-9460-010",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "Give me files attached in workspace for 160-9460-010",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  },
+  {
+    "question": "give me a brief description for transceiver pec NTTP58BD",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "What is the latest version for NTTP58BD",
+    "domain": "transceiver",
+    "intent": "conceptual_question",
+    "operation": "explain",
+    "agent_type": "db_agent",
+    "answer": "Fetch classification of a transceiver PEC"
+  },
+  {
+    "question": "who are the primary/secondary approver for NTTP58BD",
+    "domain": "platform",
+    "intent": "data_retrieval",
+    "operation": "read",
+    "agent_type": "api_agent",
+    "answer": "Get compatible components for platform"
+  }
+]

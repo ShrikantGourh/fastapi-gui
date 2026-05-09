@@ -1,0 +1,17 @@
+CONFIG_ID,DOMAIN,AGENT_TYPE,QUESTION_TEXT,INTENT,OPERATION,CONTEXT
+1,transceiver,api_agent,list transceivers,data_listing,list,Fetch or list all available transceivers
+3,transceiver,api_agent,get transceiver details,data_retrieval,read,Fetch full transceiver metadata using PEC
+11,transceiver,api_agent,download transceiver matrix workbook,file_download,download,Download transceiver compatibility matrix workbook
+13,transceiver,db_agent,what is classification of <pec>,conceptual_question,explain,Fetch classification of a transceiver PEC
+14,module,api_agent,list modules,data_listing,list,Fetch or list modules
+15,module,api_agent,get module details,data_retrieval,read,Fetch module details using module PEC
+19,module,api_agent,get compatible etms for a module,compatibility_check,read,enhanced transmission mode or etm compatible to a module
+21,platform,api_agent,get platform details,data_retrieval,read,Fetch platform metadata
+22,platform,api_agent,get compatible modules for a platform,compatibility_check,read,Fetch modules compatible with a platform
+26,wl6e,api_agent,get wl6e details,data_retrieval,read,Fetch WL6e / WaveLogic details
+28,wl6e,api_agent,get etms between releases,data_comparison,compare,Compare ETMs across releases
+501,wl6e,api_agent,list wl6e ids,data_listing,list,Fetch or list enhanced transmission mode IDs or WL6e IDs
+601,wl6e,db_agent,How many WL6e configurations have warning track enabled for each constellation type?,data_retrieval,read,How many WL6e configurations have warning track enabled for each constellation type?
+902,module,db_agent,search module,data_retrieval,read,searching modules on a condition
+1001,transceiver,db_agent,search transceiver,data_retrieval,read,searching transceivers on a condition
+1102,platform,api_agent,Get compatible components for platform,data_retrieval,read,Get compatible components for platform
